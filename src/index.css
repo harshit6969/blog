@@ -5,9 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.pip {
+  width: 17px;
+  height: 17px;
+  margin: 7px;
+  background-color: #525252;
+  border-radius: 100%;
+  transition: all .3s ease-in;
+}
+
+.pip--on {
+  background-color: #48d8b8;
+  transform: scale(1.1);
+}
+
+.clock {
+  display: flex
+}
+
+.binary-digit-group {
+  display: flex;
+  margin: 0 6px;
+}
+.fullHeight{
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .fullHeight{
+    height: 200vh;
+  }
 }
